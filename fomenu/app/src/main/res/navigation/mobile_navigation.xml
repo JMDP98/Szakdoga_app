@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.fomenu.ui.home.HomeFragment"
+        android:label="HOME"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_community"
+        android:name="com.example.fomenu.ui.community.Community"
+        android:label="Community"
+        tools:layout="@layout/fragment_community" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.fomenu.ui.gallery.GalleryFragment"
+        android:label="Send Feedback"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.fomenu.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.fomenu.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_workouts"
+        android:name="com.example.fomenu.ui.workout.Workout"
+        android:label="Workouts"
+        tools:layout="@layout/fragment_workout" />
+
+    <fragment
+        android:id="@+id/navigation_my_progress"
+        android:name="com.example.fomenu.ui.my_progress.my_progress"
+        android:label="My Progress"
+        tools:layout="@layout/fragment_my_progress" />
+    <fragment
+        android:id="@+id/navigation_workout_libraries"
+        android:name="com.example.fomenu.ui.workout_libraries.workout_libraries"
+        android:label="WorkoutLibraries"
+        tools:layout="@layout/fragment_workout_libraries" />
+    <fragment
+        android:id="@+id/navigation_your_workouts"
+        android:name="com.example.fomenu.ui.your_workouts.your_workouts"
+        android:label="Your Workouts"
+        tools:layout="@layout/fragment_your_workouts" />
+    <fragment
+        android:id="@+id/navigation_tutorials"
+        android:name="com.example.fomenu.ui.tutorials.tutorials"
+        android:label="Tutorials"
+        tools:layout="@layout/fragment_tutorials" />
+    <fragment
+        android:id="@+id/navigation_beginner_workouts"
+        android:name="com.example.fomenu.ui.beginner_workouts.beginner_workouts"
+        android:label="Beginner workouts"
+        tools:layout="@layout/fragment_beginner_workouts" />
+    <fragment
+        android:id="@+id/navigation_intermediate_workouts"
+        android:name="com.example.fomenu.ui.intermediate_workouts.Intermediate_workouts"
+        android:label="Intermediate workouts"
+        tools:layout="@layout/fragment_intermediate_workouts" />
+    <fragment
+        android:id="@+id/navigation_advanced_workouts"
+        android:name="com.example.fomenu.ui.advanced_workouts.advanced_workouts"
+        android:label="Advanced workouts"
+        tools:layout="@layout/fragment_advanced_workouts" />
+    <fragment
+        android:id="@+id/navigation_full_body_beginner_Workouts"
+        android:name="com.example.fomenu.ui.beginner_workouts.full_Body_Workouts.beginner_full_body_workouts"
+        android:label="Beginner full body workotus"
+        tools:layout="@layout/fragment_beginner_full_body_workouts" />
+    <fragment
+        android:id="@+id/navigation_pull_beginner_Workouts"
+        android:name="com.example.fomenu.ui.beginner_workouts.pull_workouts.beginner_pull_workouts"
+        android:label="Beginner pull workotus"
+        tools:layout="@layout/fragment_beginner_pull_workouts" />
+    <fragment
+        android:id="@+id/navigation_ab_beginner_Workouts"
+        android:name="com.example.fomenu.ui.beginner_workouts.ab_workouts.beginner_ab_workouts"
+        android:label="Beginner ab workotus"
+        tools:layout="@layout/fragment_beginner_ab_workouts" />
+    <fragment
+        android:id="@+id/navigation_leg_beginner_Workouts"
+        android:name="com.example.fomenu.ui.beginner_workouts.leg_workouts.beginner_leg_workouts"
+        android:label="Beginner leg workotus"
+        tools:layout="@layout/fragment_beginner_leg_workouts" />
+    <fragment
+        android:id="@+id/navigation_push_beginner_Workouts"
+        android:name="com.example.fomenu.ui.beginner_workouts.push_workouts.beginner_push_workouts"
+        android:label="Beginner push workotus"
+        tools:layout="@layout/fragment_beginner_push_workouts" />
+    <fragment
+        android:id="@+id/navigation_full_body_inter_Workouts"
+        android:name="com.example.fomenu.ui.intermediate_workouts.full_Body_Workouts.inter_full_body_workouts"
+        android:label="Intermediate full body workotus"
+        tools:layout="@layout/fragment_beginner_full_body_workouts" />
+    <fragment
+        android:id="@+id/navigation_pull_inter_Workouts"
+        android:name="com.example.fomenu.ui.intermediate_workouts.pull_workouts.inter_pull_workouts"
+        android:label="Intermediate pull workotus"
+        tools:layout="@layout/fragment_beginner_pull_workouts" />
+    <fragment
+        android:id="@+id/navigation_ab_inter_Workouts"
+        android:name="com.example.fomenu.ui.intermediate_workouts.ab_workouts.inter_ab_workouts"
+        android:label="Intermediate ab workotus"
+        tools:layout="@layout/fragment_beginner_ab_workouts" />
+    <fragment
+        android:id="@+id/navigation_leg_inter_Workouts"
+        android:name="com.example.fomenu.ui.intermediate_workouts.leg_workouts.inter_leg_workouts"
+        android:label="Intermediate leg workotus"
+        tools:layout="@layout/fragment_beginner_leg_workouts" />
+    <fragment
+        android:id="@+id/navigation_push_inter_Workouts"
+        android:name="com.example.fomenu.ui.intermediate_workouts.push_workouts.inter_push_workouts"
+        android:label="Intermediate push workotus"
+        tools:layout="@layout/fragment_beginner_push_workouts" />
+    <fragment
+        android:id="@+id/navigation_full_body_advanced_Workouts"
+        android:name="com.example.fomenu.ui.advanced_workouts.full_Body_Workouts.advanced_full_body_workouts"
+        android:label="Advanced full body workotus"
+        tools:layout="@layout/fragment_beginner_full_body_workouts" />
+    <fragment
+        android:id="@+id/navigation_pull_advanced_Workouts"
+        android:name="com.example.fomenu.ui.advanced_workouts.pull_workouts.advanced_pull_workouts"
+        android:label="Advanced pull workouts"
+        tools:layout="@layout/fragment_beginner_pull_workouts" />
+    <fragment
+        android:id="@+id/navigation_ab_advanced_Workouts"
+        android:name="com.example.fomenu.ui.advanced_workouts.ab_workouts.advanced_ab_workouts"
+        android:label="Advanced ab workouts"
+        tools:layout="@layout/fragment_beginner_ab_workouts" />
+    <fragment
+        android:id="@+id/navigation_leg_advanced_Workouts"
+        android:name="com.example.fomenu.ui.advanced_workouts.leg_workouts.advanced_leg_workouts"
+        android:label="Advanced leg workouts"
+        tools:layout="@layout/fragment_beginner_leg_workouts" />
+    <fragment
+        android:id="@+id/navigation_push_advanced_Workouts"
+        android:name="com.example.fomenu.ui.advanced_workouts.push_workouts.advanced_push_workouts"
+        android:label="Advanced push workouts"
+        tools:layout="@layout/fragment_beginner_push_workouts" />
+    <fragment
+        android:id="@+id/navigation_weight"
+        android:name="com.example.fomenu.ui.my_progress.weight.Weight"
+        android:label="Weights"
+        tools:layout="@layout/fragment_weight" />
+
+
+
+</navigation>

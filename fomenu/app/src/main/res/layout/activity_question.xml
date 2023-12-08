@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+
+    tools:context=".MainActivity">
+
+  <TextView
+      android:id="@+id/tvActivity2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ellipsize="end"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="10dp"
+      android:text="Please enter the following data"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textSize="34sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.025" />
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cvWeight"
+      android:layout_width="0dp"
+      android:layout_height="90dp"
+      app:cardBackgroundColor="#30ffffff"
+      app:cardCornerRadius="20dp"
+      app:cardElevation="15dp"
+      app:cardMaxElevation="15dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvActivity2"
+      app:layout_constraintVertical_bias="0.05">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="15dp">
+
+      <TextView
+          android:id="@+id/tvWeight"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Weight"
+          android:textColor="@color/white"
+          android:textSize="34sp"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.1"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <EditText
+          android:id="@+id/etWeight"
+          android:layout_width="103dp"
+          android:layout_height="89dp"
+          android:ems="10"
+          android:hint="0"
+          android:inputType="number"
+          android:textColor="@color/white"
+          android:textColorHint="@color/white"
+          android:textSize="34sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.204"
+          app:layout_constraintStart_toEndOf="@+id/tvWeight"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.483" />
+
+      <TextView
+          android:id="@+id/tvKG"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:hint="KG"
+          android:text="KG"
+          android:textColor="@color/white"
+          android:textColorHint="@color/white"
+          android:textSize="34sp"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.403"
+          app:layout_constraintStart_toEndOf="@+id/etWeight"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.506" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cvHeight"
+      android:layout_width="0dp"
+      android:layout_height="90dp"
+      app:cardBackgroundColor="#30ffffff"
+      app:cardCornerRadius="20dp"
+      app:cardElevation="15dp"
+      app:cardMaxElevation="15dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/cvWeight"
+      app:layout_constraintVertical_bias="0.069">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <TextView
+          android:id="@+id/tvHeight"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Height"
+          android:textColor="@color/white"
+          android:textSize="34sp"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.1"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <EditText
+          android:id="@+id/etHeight"
+          android:layout_width="103dp"
+          android:layout_height="89dp"
+          android:ems="0"
+          android:hint="0"
+          android:inputType="number"
+          android:textColor="@color/white"
+          android:textColorHint="@color/white"
+          android:textSize="34sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.238"
+          app:layout_constraintStart_toEndOf="@+id/tvHeight"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0" />
+
+      <TextView
+          android:id="@+id/tvCM"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:hint="CM"
+          android:text="CM"
+          android:textColor="@color/white"
+          android:textColorHint="@color/white"
+          android:textSize="34sp"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.382"
+          app:layout_constraintStart_toEndOf="@+id/etHeight"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.36" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cvAge"
+      android:layout_width="0dp"
+      android:layout_height="90dp"
+      app:cardBackgroundColor="#30ffffff"
+      app:cardCornerRadius="20dp"
+      app:cardElevation="15dp"
+      app:cardMaxElevation="15dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/cvHeight"
+      app:layout_constraintVertical_bias="0.089">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="15dp">
+
+      <TextView
+          android:id="@+id/tvAge"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Age"
+          android:textColor="@color/white"
+          android:textSize="34sp"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.1"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <EditText
+          android:id="@+id/etAge"
+          android:layout_width="103dp"
+          android:layout_height="89dp"
+          android:ems="10"
+          android:hint="0"
+          android:inputType="number"
+          android:textColor="@color/white"
+          android:textColorHint="@color/white"
+          android:textSize="34sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.568"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="1.0" />
+
+      <TextView
+          android:id="@+id/tvYears"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:hint="Years"
+          android:text="Years"
+          android:textColor="@color/white"
+          android:textColorHint="@color/white"
+          android:textSize="34sp"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.916"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.493" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cvSex"
+      android:layout_width="0dp"
+      android:layout_height="90dp"
+      app:cardBackgroundColor="#30ffffff"
+      app:cardCornerRadius="20dp"
+      app:cardElevation="15dp"
+      app:cardMaxElevation="15dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/cvAge"
+      app:layout_constraintVertical_bias="0.161">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="15dp">
+
+      <TextView
+          android:id="@+id/tvSex"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Sex"
+          android:textColor="@color/white"
+          android:textSize="34sp"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.1"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <ImageButton
+          android:id="@+id/ibtnMale"
+          android:layout_width="92dp"
+          android:layout_height="70dp"
+          android:backgroundTint="@color/white"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.532"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:srcCompat="@drawable/male" />
+
+      <ImageButton
+          android:id="@+id/ibtnFemale"
+          android:layout_width="92dp"
+          android:layout_height="70dp"
+          android:backgroundTint="@color/white"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.532"
+          app:layout_constraintStart_toEndOf="@+id/ibtnMale"
+          app:layout_constraintTop_toTopOf="parent"
+          app:srcCompat="@drawable/female" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.cardview.widget.CardView>
+
+  <Button
+      android:id="@+id/btnNextQuestion"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="Next"
+      android:textSize="34sp"
+      app:cornerRadius="10dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/cvSex"
+      app:layout_constraintVertical_bias="0.177" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
